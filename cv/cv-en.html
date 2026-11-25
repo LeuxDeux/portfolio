@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV — Lautaro Zacarias · Full Stack Developer</title>
+  <meta name="description" content="CV of Lautaro Nahuel Zacarias, full stack developer based in Reconquista, Argentina.">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../index.html">← Back to portfolio</a>
+    <div class="toolbar__group">
+      <a href="cv-es.html">Español</a>
+      <a href="CV-Lautaro-Zacarias-EN.pdf" download>Download PDF</a>
+      <button type="button" onclick="window.print()">Print</button>
+    </div>
+  </div>
+
+  <main class="page">
+    <header class="cv-head">
+      <div>
+        <h1 class="cv-name">Lautaro Nahuel Zacarias</h1>
+        <p class="cv-role">Full Stack Developer</p>
+      </div>
+      <ul class="cv-contact">
+        <li>Reconquista, Santa Fe, Argentina</li>
+        <li><a href="mailto:lautizacarias@hotmail.com">lautizacarias@hotmail.com</a></li>
+        <li><a href="tel:+543482617278">+54 3482 617278</a></li>
+        <li><a href="https://github.com/LeuxDeux" target="_blank" rel="noopener noreferrer">github.com/LeuxDeux</a></li>
+      </ul>
+    </header>
+
+    <section class="cv-section">
+      <h2>Profile</h2>
+      <p class="cv-lead">Full stack developer focused on backend, with experience since 2024 building institutional systems for UTN Facultad Regional Reconquista. Three of the systems I built are in production —budget execution, room booking and teaching-position draws— and I also built the accreditation and voting app for the dean election, used for a single day. I work end to end: process discovery, data modelling, API, interface and deployment on Linux servers. Trained in JavaScript/Node.js and React, expanded with Go, PostgreSQL and RAG.</p>
+    </section>
+
+    <section class="cv-section">
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry__head">
+          <h3 class="entry__title">UTN Facultad Regional Reconquista <span>— Institutional systems</span></h3>
+          <span class="entry__date">2024 — present</span>
+        </div>
+        <p class="entry__intro">Full stack development, data design and deployment of the faculty's management systems.</p>
+
+        <div class="project-cv">
+          <h3>SEP — Budget Execution System <span class="badge">In production</span></h3>
+          <p>Replaced the WhatsApp and intake-desk invoice flow. It centralises departmental income, expenses and invoices, with hierarchical roles, filterable dashboards, Excel export and financial trend charts. Since 2026 I'm building SEP v2, the monolith remake: TypeScript API with Zod, React SPA with Mantine and TanStack Query, migrations and historical data backfill.</p>
+          <p class="stack">Node.js · Express · EJS · TypeScript · React · MySQL · Docker · Nginx · Apache</p>
+        </div>
+
+        <div class="project-cv">
+          <h3>SACQ — Congress accreditation and attendance <span class="badge badge--event">One-day use</span></h3>
+          <p>QR access to the application, accreditation by ID number, entry and exit logging, and public and private dashboards updated in real time over Socket.IO during the dean and vice-dean election. Operational roles: vote entry and attendance control.</p>
+          <p class="stack">React · Node.js · Express · Socket.IO · MySQL · Docker · Amazon Lightsail</p>
+        </div>
+
+        <div class="project-cv">
+          <h3>SRE — Events and room booking <span class="badge">In production</span></h3>
+          <p>Replaced a shared spreadsheet with an SPA with monthly, weekly and daily calendars, role-based bookings, automatic or conditional approval per room, availability checks and institutional email notifications.</p>
+          <p class="stack">React 19 · Express 5 · JWT · MySQL · React-Big-Calendar · Nodemailer</p>
+        </div>
+
+        <div class="project-cv">
+          <h3>ACD — Topic draw for teaching positions <span class="badge">In production</span></h3>
+          <p>Draw with a reproducible seed and deterministic algorithm, public animation, PDF minutes with a verification QR code and an audit trail for every action.</p>
+          <p class="stack">React + Vite · Node.js · MariaDB · PDFKit · JWT · PM2</p>
+        </div>
+
+        <div class="project-cv">
+          <h3>RAG — Institutional assistant with cited sources <span class="badge badge--dev">In development</span></h3>
+          <p>Go engine with hybrid search over ~4,000 chunks, PostgreSQL and local Ollama models. It answers only with verified citations, with an operations panel and an embeddable widget.</p>
+          <p class="stack">Go · PostgreSQL 18 · Ollama · React + Mantine · Docker</p>
+        </div>
+
+        <div class="project-cv">
+          <h3>UTN FRRq portal — Backend and EJS views <span class="badge badge--dev">In development</span></h3>
+          <p>Complete portal backend: news, international opportunities, search, images and admin panel on Node.js/Express 5 + MariaDB, with TipTap editor, publish/unpublish and login. EJS views for news (list, detail, admin and editor). The public site and Python static generator were delivered by another team member; I wired that HTML/CSS into the Node app.</p>
+          <p class="stack">Node.js · Express 5 · EJS · MariaDB · TipTap · Sharp · Multer · PM2</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Teaching</h2>
+      <div class="entry">
+        <div class="entry__head">
+          <h3 class="entry__title">Teaching assistant — Introduction to Data Analysis</h3>
+          <span class="entry__date">2025</span>
+        </div>
+        <p class="entry__intro">UTN FRRq, University Technician in Programming. Class preparation, student follow-up and activity coordination.</p>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Final project</h2>
+      <div class="entry">
+        <div class="entry__head">
+          <h3 class="entry__title">Virtual assistant with web and WhatsApp integration</h3>
+          <span class="entry__date">2023 — 2024</span>
+        </div>
+        <p class="entry__intro">Node.js backend with a minimal Electron UI that unified web and WhatsApp queries through Dialogflow ES, Firebase Storage and Venom-Bot. Conversations and feedback logged in MySQL to improve answers.</p>
+        <p class="stack">Node.js · Express · MySQL · Electron · Dialogflow · Firebase · Venom-Bot</p>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Technical skills</h2>
+      <dl class="skills">
+        <dt>Backend</dt>
+        <dd>Node.js, Express, REST, JWT, Go, MySQL, MariaDB, PostgreSQL, PHP</dd>
+        <dt>Frontend</dt>
+        <dd>React, Vite, React Router, TanStack Query, Mantine, EJS, TipTap, Bootstrap, HTML5, CSS</dd>
+        <dt>Infrastructure</dt>
+        <dd>Docker, Nginx, Apache, PM2, Debian/Ubuntu, Amazon Lightsail, HTTPS, backups</dd>
+        <dt>Data &amp; AI</dt>
+        <dd>SQL, relational modelling, RAG, embeddings, Ollama, Power BI</dd>
+        <dt>Tools</dt>
+        <dd>Git/GitHub, Postman, PDFKit, Socket.IO, Nodemailer, Sharp, Multer</dd>
+      </dl>
+    </section>
+
+    <section class="cv-section">
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry__head">
+          <h3 class="entry__title">University Technician in Programming</h3>
+          <span class="entry__date">2021 — 2023</span>
+        </div>
+        <p class="entry__intro">UTN Facultad Regional Reconquista. Completed.</p>
+      </div>
+      <div class="entry">
+        <div class="entry__head">
+          <h3 class="entry__title">Bachelor's degree in Rural Management</h3>
+          <span class="entry__date">2019 — 2021</span>
+        </div>
+        <p class="entry__intro">UTN Facultad Regional Reconquista. Two years completed.</p>
+      </div>
+      <div class="entry">
+        <div class="entry__head">
+          <h3 class="entry__title">Secondary school — Natural Sciences</h3>
+          <span class="entry__date">Completed</span>
+        </div>
+        <p class="entry__intro">EESO No. 203 Juan Bautista Alberdi.</p>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Courses and certifications</h2>
+      <p class="cv-lead">UTN FRRE, distance learning (2021 — 2022):</p>
+      <ul class="plain">
+        <li>Full Stack Web Development Diploma (210 h).</li>
+        <li>Web Programming with PHP and MySQL, beginner and advanced (120 h).</li>
+        <li>Introductory Web Programming, Level I (90 h).</li>
+        <li>.NET Programming (80 h).</li>
+        <li>Web Programming with JavaScript (60 h).</li>
+        <li>Responsive Web Design: HTML5 and CSS3 (60 h).</li>
+      </ul>
+    </section>
+
+    <section class="cv-section">
+      <h2>References</h2>
+      <p class="cv-lead">Institutional references available on request.<br>
+      Mr Javier Volkart, Administrative Secretary · Eng. Juan Pablo Suligoy, Academic Secretary — UTN FRRq.</p>
+    </section>
+
+    <footer class="cv-foot">
+      <span>Updated: November 2026</span>
+      <span>lautizacarias@hotmail.com · github.com/LeuxDeux</span>
+    </footer>
+  </main>
+</body>
+</html>
